@@ -53,7 +53,7 @@ actions: {
 
 | Name           | Type        | Default          | Description |
 | ---            | ---         | ---              | ---         |
-| name           | String      | notify           | Defines the instance name. It's prefixed with the dollar sign. E.g. `$notify` |
+| name           | String      | stNotify           | Defines the instance name. It's prefixed with the dollar sign. E.g. `$stNotify` |
 | moduleName     | String      | notify-layer-api | Store module name if you want call notification from store |
 | store          | Store  | null
 
