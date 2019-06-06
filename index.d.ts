@@ -9,15 +9,13 @@ export interface NotifyOptions {
 
 type Notification = {
   type: string;
-  title?: string;
-  message?: string;
-};
+} & { [key: string]: any };
 
 declare module 'vue/types/vue' {
   interface VueConstructor {
     $notify: {
-      emit: (params: Object) => void,
-      watch: (cb: (params: Object, pool: Notification & { [key: string]: any }[]) => void) => void
+      emit: (params: Notification) => void,
+      watch: (cb: (params: Object, pool: Notification[]) => void) => void
     }
   } 
 }

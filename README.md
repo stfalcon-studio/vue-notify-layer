@@ -56,3 +56,21 @@ actions: {
 | name           | String      | notify           | Defines the instance name. It's prefixed with the dollar sign. E.g. `$notify` |
 | moduleName     | String      | notify-layer-api | Store module name if you want call notification from store |
 | store          | Store  | null
+
+### Glossary
+
+#### Notify payload
+
+```
+type Notification = {
+  type: string;
+} & { [key: string]: any };
+```
+
+#### Notify interface
+```
+$notify: {
+  emit: (params: Notification) => void,
+  watch: (cb: (params: Notification, pool: Notification[]) => void) => void
+}
+```
