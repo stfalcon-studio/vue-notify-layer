@@ -1,0 +1,23 @@
+{
+  "name": "vue-notify-layer",
+  "version": "0.0.1",
+  "description": "Vue notification layer for binding any Notify plugins",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stfalcon-studio/vue-notify-layer.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stfalcon-studio/vue-notify-layer/issues"
+  },
+  "homepage": "https://github.com/stfalcon-studio/vue-notify-layer#readme",
+  "peerDependencies": {
+    "vue": "*"
+  },
+  "devDependencies": {}
+}
