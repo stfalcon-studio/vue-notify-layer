@@ -21,8 +21,8 @@ const events = new Vue({
 
 export default {
   install(Vue, options = {}) {
-    const name = options.name || 'notify';
-    const moduleName = options.moduleName || 'notify-layer-api';
+    const name = options.name || 'stNotify';
+    const moduleName = options.moduleName || 'stNotify';
 
     const notify = params => {
       if (typeof params !== 'object') {
@@ -51,7 +51,7 @@ export default {
 
     Vue.prototype['$' + name] = {
       watch,
-      on: notify,
+      emit: notify,
     };
   },
 };

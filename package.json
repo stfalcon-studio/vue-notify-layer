@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/stfalcon-studio/vue-notify-layer#readme",
   "peerDependencies": {
-    "vue": "*"
+    "vue": "*",
+    "vuex": "*"
   },
   "devDependencies": {}
 }
